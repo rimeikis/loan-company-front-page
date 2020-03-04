@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <!-- Montserrat Font -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <!-- noUiSlider CSS-->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="/vendors/noUiSlider/nouislider.css"
+    />
+    <!-- noUiSlider JS-->
+    <script
+      type="text/javascript"
+      src="/vendors/noUiSlider/nouislider.min.js"
+    ></script>
+    <!-- Clouds Animation CSS-->
+    <link rel="stylesheet" type="text/css" href="/assets/css/main.css" />
+    <!-- Main CSS -->
+    <link rel="stylesheet" type="text/css" href="/assets/css/clouds.css" />
+    <title>Loan Company</title>
+  </head>
+
+  <body>
+    <!-- Header Container -->
+    <div class="container-fluid" id="header-container">
+      <!-- Clouds -->
+      <div id="background-wrap">
+        <div class="x1">
+          <div class="cloud"></div>
+        </div>
+
+        <div class="x2">
+          <div class="cloud"></div>
+        </div>
+      </div>
+
+      <!-- Slider Form -->
+      <div class="row justify-content-center">
+        <div class="col-lg-4 align-self-center">
+          <form class="slider-form shadow-lg text-center pb-md-5">
+            <h4>Lorem ipsum dolor sit amet</h4>
+            <small class="form-text text-muted pb-md-3"
+              >Lorem ipsum dolor sit amet, consectetur adipiscing elit.</small
+            >
+
+            <!-- Loan Amount Slider -->
+            <div class="row">
+              <div class="col-8 pb-md-4">
+                <div id="sliderLoanAmount"></div>
+              </div>
+              <div class="col-4">
+                <div id="loanAmount" class="font-weight-bold"></div>
+              </div>
+            </div>
+
+            <!-- Loan Term Slider -->
+            <div class="row">
+              <div class="col-8 pb-md-4">
+                <div id="sliderLoanTerm"></div>
+              </div>
+              <div class="col-4">
+                <div id="loanTerm" class="font-weight-bold"></div>
+              </div>
+            </div>
+
+            <!-- Submit Button -->
+            <div class="row">
+              <div class="col-6">
+                <button
+                  type="submit"
+                  class="text-white btn btn-block font-weight-bold"
+                >
+                  Apply Now
+                </button>
+              </div>
+              <div class="col-6">
+                <small class="form-text text-muted"
+                  >Lorem ipsum dolor sit amet</small
+                >
+              </div>
+            </div>
+          </form>
+        </div>
+
+        <!-- Video Container -->
+        <div class="col-lg-4 align-self-center">
+          <div class="embed-responsive embed-responsive-4by3 video">
+            <iframe
+              class="embed-responsive-item"
+              src="https://www.youtube.com/embed/wm48_VrbB4Q"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bike Image -->
+      <div class="row justify-content-between align-items-end">
+        <div class="col-2 align-self-end">
+          <img src="/assets/images/bike.png" id="img-bike" class="img-fluid" />
+        </div>
+
+        <!-- Bench Image -->
+        <div class="col-2 align-self-end" id="bench-column">
+          <img
+            src="/assets/images/bench.png"
+            id="img-bench"
+            class="img-fluid"
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- Main Body -->
+    <div class="container-fluid text-center pt-3 pb-3" id="info-bar">
+      <span class="align-middle text-dark">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua.
+      </span>
+    </div>
+    <div class="container-fluid mt-5">
+      <div class="row">
+        <!-- Empty Left Grid Column -->
+        <div class="col-lg-4"></div>
+
+        <!-- Main Grid Column -->
+        <div class="col-lg-4">
+          <!-- Top/Info Container -->
+          <div class="container text-center" id="info-container">
+            <h4>
+              Lorem ipsum dolor sit amet
+            </h4>
+            <p class="text-dark">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit
+              <img
+                src="/assets/icons/question-fill.svg"
+                alt="Question Mark"
+                width="18"
+                height="18"
+                title="Question Mark"
+              />
+            </p>
+            <div class="row">
+              <div class="col-6">
+                <img
+                  class="inline-block"
+                  src="/assets/icons/check.svg"
+                  alt=""
+                  width="32"
+                  height="32"
+                  title="Check"
+                />
+                <small class="d-block text-secondary">
+                  Lorem ipsum dolor sit amet
+                </small>
+              </div>
+              <div class="col-6">
+                <img
+                  class="inline-block"
+                  src="/assets/icons/check.svg"
+                  alt=""
+                  width="32"
+                  height="32"
+                  title="Check"
+                />
+                <small class="d-block text-secondary">
+                  Lorem ipsum dolor sit amet
+                </small>
+              </div>
+            </div>
+          </div>
+
+          <!-- Loan Details Container -->
+          <div class="container" id="loan-details">
+            <h6 class="font-weight-bold">Loan Details</h6>
+            <hr style="border: 0.5px solid #fff" />
+            <form>
+              <div class="row">
+                <div class="col-sm-6">
+                  <div class="form-group">
+                    <!-- Loan Amount Select -->
+                    <label for="loanAmount">Loan Amount</label>
+                    <select
+                      class="form-control font-weight-bold"
+                      id="loanAmount"
+                    >
+                      <option>$10.000</option>
+                      <option>$20.000</option>
+                      <option>$30.000</option>
+                      <option>$40.000</option>
+                      <option>$50.000</option>
+                      <option>$60.000</option>
+                      <option>$70.000</option>
+                      <option>$80.000</option>
+                      <option>$90.000</option>
+                      <option>$100.000</option>
+                    </select>
+                  </div>
+                  <small class="d-block">
+                    Lorem ipsum dolor sit amet
+                  </small>
+                </div>
+
+                <!-- Loan Term Select -->
+                <div class="col-sm-6">
+                  <div class="form-group">
+                    <label for="loanTerm">Loan Term</label>
+                    <select class="form-control font-weight-bold" id="loanTerm">
+                      <option>12 Months</option>
+                      <option>18 Months</option>
+                      <option>24 Months</option>
+                      <option>36 Months</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+
+          <!-- User Details Container -->
+          <div class="container mt-4" id="user-details">
+            <h6 class="font-weight-bold">Your Details</h6>
+            <hr style="border: 0.5px solid #12203a" />
+            <form class="needs-validation" novalidate>
+              <!-- Full Name -->
+              <div class="form-group">
+                <label for="fullName" class="text-secondary">Full Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="fullName"
+                  pattern="^(?!.{51,})([a-zA-Z]+\s+[a-zA-Z]+)$"
+                  required
+                />
+                <div class="invalid-feedback">
+                  Please check your full name
+                </div>
+              </div>
+
+              <!-- Mobile Number -->
+              <div class="form-group">
+                <label for="mobileNumber" class="text-secondary"
+                  >Mobile Number</label
+                >
+                <input
+                  type="tel"
+                  class="form-control"
+                  id="mobileNumber"
+                  pattern="((\+370?)|8)6\d{7}"
+                  required
+                />
+                <div class="invalid-feedback">
+                  Please input a valid LT mobile number
+                </div>
+              </div>
+
+              <!-- Email -->
+              <div class="form-group">
+                <label for="email" class="text-secondary">Email</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  pattern="^[\w \-._]+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$"
+                  required
+                />
+                <div class="invalid-feedback">
+                  Please input a valid email address
+                </div>
+              </div>
+
+              <!-- Check -->
+              <div class="form-check">
+                <input
+                  type="checkbox"
+                  class="form-check-input"
+                  id="check"
+                  required
+                />
+                <label class="form-check-label text-secondary" for="check"
+                  >Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Fusce in tellus nisi. Curabitur accumsan elit ut neque
+                  feugiat.
+                  <img
+                    src="/assets/icons/question-fill.svg"
+                    alt="Question Mark"
+                    width="18"
+                    height="18"
+                    title="Question Mark"
+                /></label>
+                <div class="invalid-feedback">
+                  You must agree before submitting.
+                </div>
+              </div>
+
+              <!-- Submit Button -->
+              <button
+                type="submit"
+                class="text-white btn btn-block font-weight-bold mt-3 mb-5"
+              >
+                Next
+              </button>
+            </form>
+          </div>
+        </div>
+
+        <!-- Empty Right Grid Column -->
+        <div class="col-lg-4"></div>
+      </div>
+    </div>
+
+    <!-- Bootstrap jQuery -->
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Bootstrap Popper -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Bootstrap JS -->
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Sliders JS -->
+    <script type="text/javascript" src="/assets/js/sliders.js"></script>
+    <!-- Full Name Validator JS -->
+    <script
+      type="text/javascript"
+      src="/assets/js/fullNameValidator.js"
+    ></script>
+    <!-- Form Validation JS -->
+    <script type="text/javascript" src="/assets/js/formValidation.js"></script>
+  </body>
+</html>

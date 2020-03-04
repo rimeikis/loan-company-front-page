@@ -1,0 +1,170 @@
+/* Colour variables */
+:root {
+  --orange: #f46113;
+  --navy: #12203a;
+  --cyan: #05b7ab;
+  --sand: #f3f3c1;
+}
+
+/* Global reset and font */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat';
+}
+
+/* Typography */
+h4 {
+  color: var(--navy);
+  font-weight: 900;
+}
+
+/* noUiSlider */
+.noUi-connects {
+  border-radius: 30px;
+}
+
+#sliderLoanAmount,
+#sliderLoanTerm {
+  border-radius: 30px;
+}
+
+.noUi-handle,
+.noUi-handle-lower {
+  background-color: var(--cyan);
+}
+.noUi-handle::after,
+.noUi-handle::before {
+  display: none;
+}
+
+/* Containers */
+#info-bar {
+  background-color: var(--sand);
+  font-size: 0.8em;
+}
+
+#info-container {
+  margin-bottom: 2em;
+}
+
+#loan-details {
+  background-color: var(--navy);
+  color: #fff;
+  border-radius: 30px;
+  padding: 2em 1em 2em 1em;
+}
+
+/* Elements */
+button {
+  background-color: var(--orange);
+}
+
+.btn,
+.form-control {
+  border-radius: 2rem;
+}
+
+#loanAmount,
+#loanTerm {
+  color: var(--navy);
+}
+
+/* Header */
+#header-container {
+  background-image: url('/assets/images/header.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: static;
+  z-index: 1;
+}
+
+/* Bike image */
+#img-bike {
+  position: relative;
+  left: 5rem;
+  max-width: 50%;
+  width: auto;
+}
+
+/* Bench image */
+#img-bench {
+  right: 5rem;
+  max-width: 50%;
+  width: auto;
+}
+#bench-column {
+  position: relative;
+  top: 1rem;
+}
+
+/* Video container */
+.video {
+  position: relative;
+  z-index: 3;
+  border-radius: 20px;
+  height: 16em;
+  width: 80%;
+  right: 2rem;
+  margin-top: 5rem;
+}
+
+/* Slider form */
+.slider-form {
+  position: relative;
+  width: 80%;
+  height: 100%;
+  z-index: 4;
+  background-color: #ffffff;
+  float: right;
+  padding: 1em;
+  border-radius: 20px;
+  left: 2rem;
+  margin-top: 8rem;
+}
+
+.slider-form button {
+  border-radius: 20px;
+}
+
+/* CSS media queries */
+@media (min-width: 1070px) {
+  #header-container {
+    background-image: url('/assets/images/header.png');
+    background-repeat: repeat;
+    background-size: contain;
+    position: static;
+    z-index: 1;
+  }
+}
+
+@media (max-width: 991px) {
+  .video {
+    z-index: 3;
+    border-radius: 20px;
+    height: 16em;
+    width: auto;
+    right: 0rem;
+    margin-top: 1em;
+    margin-bottom: 1em;
+  }
+
+  .slider-form {
+    position: static;
+    width: 100%;
+    height: 100%;
+    z-index: 99;
+    background-color: #ffffff;
+    float: right;
+    padding: 1em;
+    border-radius: 20px;
+    left: 0rem;
+    margin-top: 1em;
+  }
+
+  #img-bike,
+  #img-bench,
+  #background-wrap {
+    display: none;
+  }
+}
