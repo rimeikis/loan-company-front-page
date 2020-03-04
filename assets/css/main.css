@@ -130,19 +130,13 @@ button {
 /* CSS media queries */
 @media (min-width: 1070px) {
   #header-container {
-    background-image: url('/assets/images/header.png');
     background-repeat: repeat;
     background-size: contain;
-    position: static;
-    z-index: 1;
   }
 }
 
 @media (max-width: 991px) {
   .video {
-    z-index: 3;
-    border-radius: 20px;
-    height: 16em;
     width: auto;
     right: 0rem;
     margin-top: 1em;
@@ -152,12 +146,6 @@ button {
   .slider-form {
     position: static;
     width: 100%;
-    height: 100%;
-    z-index: 99;
-    background-color: #ffffff;
-    float: right;
-    padding: 1em;
-    border-radius: 20px;
     left: 0rem;
     margin-top: 1em;
   }
